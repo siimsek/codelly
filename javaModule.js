@@ -11,7 +11,7 @@ exports.compileJava = function (envData, code, fn) {
 	var dirname = cuid.slug();
 	path = './temp/' + dirname;
 
-	fs.mkdir(path, 0777, function (err) {
+	fs.mkdir(path, 0o777, function (err) {
 		if (err && exports.stats)
 			console.log(err.toString().red);
 		else {
@@ -81,7 +81,7 @@ exports.compileJavaWithInput = function (envData, code, input, fn) {
 	var dirname = cuid.slug();
 	path = './temp/' + dirname;
 
-	fs.mkdir(path, 0777, function (err) {
+	fs.mkdir(path, 0o777, function (err) {
 		if (err && exports.stats)
 			console.log(err.toString().red);
 		else {

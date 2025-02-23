@@ -20,6 +20,15 @@ codelly is a Node.JS module for online compiling. Based on [Compilex](https://gi
 |GO | &#x2714; |
 |PHP | &#x2714; |
 |Swift | &#x2714; |
+|Ruby | &#x2714; |
+|Kotlin | &#x2714; |
+|TypeScript | &#x2714; |
+|Scala | &#x2714; |
+|R | &#x2714; |
+|Julia | &#x2714; |
+|Perl | &#x2714; |
+|Lua | &#x2714; |
+|Haskell | &#x2714; |
 
   
 
@@ -89,6 +98,53 @@ codelly is a Node.JS module for online compiling. Based on [Compilex](https://gi
 <h4>Swift</h4>
 <ol>
 <li>Windows - Linux : <a  href="https://www.swift.org/download/">Swift.org</a></li>
+</ol>
+
+  
+
+<h4>Ruby</h4>
+<ol>
+<li>Windows - Linux : <a href="https://www.ruby-lang.org/en/downloads/">Ruby</a></li>
+</ol>
+
+<h4>Kotlin</h4>
+<ol>
+<li>Windows - Linux : <a href="https://kotlinlang.org/docs/command-line.html">Kotlin</a></li>
+</ol>
+
+<h4>TypeScript</h4>
+<ol>
+<li>Windows - Linux : <a href="https://www.typescriptlang.org/download">TypeScript</a></li>
+</ol>
+
+<h4>Scala</h4>
+<ol>
+<li>Windows - Linux : <a href="https://www.scala-lang.org/download/">Scala</a></li>
+</ol>
+
+<h4>R</h4>
+<ol>
+<li>Windows - Linux : <a href="https://www.r-project.org/">R</a></li>
+</ol>
+
+<h4>Julia</h4>
+<ol>
+<li>Windows - Linux : <a href="https://julialang.org/downloads/">Julia</a></li>
+</ol>
+
+<h4>Perl</h4>
+<ol>
+<li>Windows - Linux : <a href="https://www.perl.org/get.html">Perl</a></li>
+</ol>
+
+<h4>Lua</h4>
+<ol>
+<li>Windows - Linux : <a href="https://www.lua.org/download.html">Lua</a></li>
+</ol>
+
+<h4>Haskell</h4>
+<ol>
+<li>Windows - Linux : <a href="https://www.haskell.org/ghc/">GHC (Glasgow Haskell Compiler)</a></li>
 </ol>
 
   
@@ -266,6 +322,168 @@ compiler.compileSwift( envData , code , function(data){
 });
 //With Input
 compiler.compileSwiftWithInput( envData , code , input , function(data){
+    res.send(data);
+});
+```
+
+<h5>Ruby</h5>
+
+```javascript
+//if windows
+var envData = { OS : "windows"};
+//else
+var envData = { OS : "linux" };
+
+//Without Input:
+compiler.compileRuby( envData , code , function(data){
+    res.send(data);
+});
+//With Input
+compiler.compileRubyWithInput( envData , code , input , function(data){
+    res.send(data);
+});
+```
+
+<h5>Kotlin</h5>
+
+```javascript
+//if windows
+var envData = { OS : "windows"};
+//else
+var envData = { OS : "linux" };
+
+//Without Input:
+compiler.compileKotlin( envData , code , function(data){
+    res.send(data);
+});
+//With Input
+compiler.compileKotlinWithInput( envData , code , input , function(data){
+    res.send(data);
+});
+```
+
+<h5>TypeScript</h5>
+
+```javascript
+//if windows
+var envData = { OS : "windows"};
+//else
+var envData = { OS : "linux" };
+
+//Without Input:
+compiler.compileTS( envData , code , function(data){
+    res.send(data);
+});
+//With Input
+compiler.compileTSWithInput( envData , code , input , function(data){
+    res.send(data);
+});
+```
+
+<h5>Scala</h5>
+
+```javascript
+//if windows
+var envData = { OS : "windows"};
+//else
+var envData = { OS : "linux" };
+
+//Without Input:
+compiler.compileScala( envData , code , function(data){
+    res.send(data);
+});
+//With Input
+compiler.compileScalaWithInput( envData , code , input , function(data){
+    res.send(data);
+});
+```
+
+<h5>R</h5>
+
+```javascript
+//if windows
+var envData = { OS : "windows"};
+//else
+var envData = { OS : "linux" };
+
+//Without Input:
+compiler.compileR( envData , code , function(data){
+    res.send(data);
+});
+//With Input
+compiler.compileRWithInput( envData , code , input , function(data){
+    res.send(data);
+});
+```
+
+<h5>Julia</h5>
+
+```javascript
+//if windows
+var envData = { OS : "windows"};
+//else
+var envData = { OS : "linux" };
+
+//Without Input:
+compiler.compileJulia( envData , code , function(data){
+    res.send(data);
+});
+//With Input
+compiler.compileJuliaWithInput( envData , code , input , function(data){
+    res.send(data);
+});
+```
+
+<h5>Perl</h5>
+
+```javascript
+//if windows
+var envData = { OS : "windows"};
+//else
+var envData = { OS : "linux" };
+
+//Without Input:
+compiler.compilePerl( envData , code , function(data){
+    res.send(data);
+});
+//With Input
+compiler.compilePerlWithInput( envData , code , input , function(data){
+    res.send(data);
+});
+```
+
+<h5>Lua</h5>
+
+```javascript
+//if windows
+var envData = { OS : "windows"};
+//else
+var envData = { OS : "linux" };
+
+//Without Input:
+compiler.compileLua( envData , code , function(data){
+    res.send(data);
+});
+//With Input
+compiler.compileLuaWithInput( envData , code , input , function(data){
+    res.send(data);
+});
+```
+
+<h5>Haskell</h5>
+
+```javascript
+//if windows
+var envData = { OS : "windows"};
+//else
+var envData = { OS : "linux" };
+
+//Without Input:
+compiler.compileHaskell( envData , code , function(data){
+    res.send(data);
+});
+//With Input
+compiler.compileHaskellWithInput( envData , code , input , function(data){
     res.send(data);
 });
 ```

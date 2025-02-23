@@ -1,6 +1,6 @@
 {
   "name": "codelly",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "codelly is a Node.JS module for online compiling. Based on Compilex.",
   "main": "codelly.js",
   "dependencies": {
@@ -23,12 +23,20 @@
     "c++",
     "java",
     "python",
-    "c#",
     "vb",
     "gcc",
     "javac",
     "csc",
-    "vbc"
+    "vbc",
+    "ruby",
+    "kotlin",
+    "typescript",
+    "scala",
+    "r",
+    "julia",
+    "perl",
+    "lua",
+    "haskell"
   ],
   "author": "Muhammed Ali Şimşek <malisimsek17@gmail.com> (https://siimsek.github.io/)",
   "license": "CC BY-NC-ND",

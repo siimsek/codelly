@@ -11,6 +11,15 @@ var goModule = require('./goModule.js');
 var swiftModule = require('./swiftModule.js');
 var rustModule = require('./rustModule.js');
 var phpModule = require('./phpModule.js');
+var rubyModule = require('./rubyModule.js');
+var kotlinModule = require('./kotlinModule.js');
+var tsModule = require('./tsModule.js');
+var scalaModule = require('./scalaModule.js');
+var rModule = require('./rModule.js');
+var juliaModule = require('./juliaModule.js');
+var perlModule = require('./perlModule.js');
+var luaModule = require('./luaModule.js');
+var haskellModule = require('./haskellModule.js');
 
 exports.stats = false;
 
@@ -139,6 +148,114 @@ exports.compilePHPWithInput = function (envData, code, input, fn) {
 	if (exports.stats)
 		phpModule.stats = true;
 	phpModule.compilePHPWithInput(envData, code, input, fn);
+}
+
+exports.compileRuby = function (envData, code, fn) {
+	if (exports.stats)
+		rubyModule.stats = true;
+	rubyModule.compileRuby(envData, code, fn);
+}
+
+exports.compileRubyWithInput = function (envData, code, input, fn) {
+	if (exports.stats)
+		rubyModule.stats = true;
+	rubyModule.compileRubyWithInput(envData, code, input, fn);
+}
+
+exports.compileKotlin = function (envData, code, fn) {
+	if (exports.stats)
+		kotlinModule.stats = true;
+	kotlinModule.compileKotlin(envData, code, fn);
+}
+
+exports.compileKotlinWithInput = function (envData, code, input, fn) {
+	if (exports.stats)
+		kotlinModule.stats = true;
+	kotlinModule.compileKotlinWithInput(envData, code, input, fn);
+}
+
+exports.compileTS = function (envData, code, fn) {
+	if (exports.stats)
+		tsModule.stats = true;
+	tsModule.compileTS(envData, code, fn);
+}
+
+exports.compileTSWithInput = function (envData, code, input, fn) {
+	if (exports.stats)
+		tsModule.stats = true;
+	tsModule.compileTSWithInput(envData, code, input, fn);
+}
+
+exports.compileScala = function (envData, code, fn) {
+	if (exports.stats)
+		scalaModule.stats = true;
+	scalaModule.compileScala(envData, code, fn);
+}
+
+exports.compileScalaWithInput = function (envData, code, input, fn) {
+	if (exports.stats)
+		scalaModule.stats = true;
+	scalaModule.compileScalaWithInput(envData, code, input, fn);
+}
+
+exports.compileR = function (envData, code, fn) {
+	if (exports.stats)
+		rModule.stats = true;
+	rModule.compileR(envData, code, fn);
+}
+
+exports.compileRWithInput = function (envData, code, input, fn) {
+	if (exports.stats)
+		rModule.stats = true;
+	rModule.compileRWithInput(envData, code, input, fn);
+}
+
+exports.compileJulia = function (envData, code, fn) {
+	if (exports.stats)
+		juliaModule.stats = true;
+	juliaModule.compileJulia(envData, code, fn);
+}
+
+exports.compileJuliaWithInput = function (envData, code, input, fn) {
+	if (exports.stats)
+		juliaModule.stats = true;
+	juliaModule.compileJuliaWithInput(envData, code, input, fn);
+}
+
+exports.compilePerl = function (envData, code, fn) {
+	if (exports.stats)
+		perlModule.stats = true;
+	perlModule.compilePerl(envData, code, fn);
+}
+
+exports.compilePerlWithInput = function (envData, code, input, fn) {
+	if (exports.stats)
+		perlModule.stats = true;
+	perlModule.compilePerlWithInput(envData, code, input, fn);
+}
+
+exports.compileLua = function (envData, code, fn) {
+	if (exports.stats)
+		luaModule.stats = true;
+	luaModule.compileLua(envData, code, fn);
+}
+
+exports.compileLuaWithInput = function (envData, code, input, fn) {
+	if (exports.stats)
+		luaModule.stats = true;
+	luaModule.compileLuaWithInput(envData, code, input, fn);
+}
+
+exports.compileHaskell = function (envData, code, fn) {
+	if (exports.stats)
+		haskellModule.stats = true;
+	haskellModule.compileHaskell(envData, code, fn);
+}
+
+exports.compileHaskellWithInput = function (envData, code, input, fn) {
+	if (exports.stats)
+		haskellModule.stats = true;
+	haskellModule.compileHaskellWithInput(envData, code, input, fn);
 }
 
 exports.flushSync = function () {
